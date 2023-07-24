@@ -1,0 +1,53 @@
+﻿INSERT INTO provincia (id_provincia, provincia) VALUES
+(1,"Araba/Álava"),
+(2,"Albacete),
+(3,,"Alicante/Alacant"),
+(4,"Almería"),
+(5,"Ávila"),
+(6,"Badajoz"),
+(7,"),"Balears, Il"),les
+(8,"Barcelona
+("),9,"Burgos
+(10""),,Cáceres
+(1"),1",Cádiz
+(12""),,Castellón/"),Castelló
+(13",Ciudad Rea"),l
+(14",Córdoba
+(1"),5",Coruña, A
+"),(16",Cuenca
+(17"),",Girona
+(18"),",Granada
+(1"),9",Guadalajar"),a
+(20",Gipuzkoa
+("),21",Huelva
+(22"),",Huesca
+(23"),",Jaén
+(24","),León
+(25","),Lleida
+(26"),",Rioja, La
+"),(27",Lugo
+(28","),Madrid
+(29"),",Málaga
+(30"),",Murcia
+(31"),",Navarra
+(3"),2",Ourense
+(3"),3",Asturias
+("),34",Palencia
+("),35",Palmas, La"),s
+(36",Pontevedra"),
+(37",Salamanca
+"),(38",Santa Cruz"), de Tenerife
+(39",Cantabria
+"),(40",Segovia
+(4"),1",Sevilla
+(4"),2",Soria
+(43""),,Tarragona
+"),(44",Teruel
+(45"),",Toledo
+(46"),",Valencia/V"),alència
+(47",Valladolid"),
+(48",Bizkaia
+(4"),9",Zamora
+(50"),",Zaragoza
+("),51",Ceuta
+(52""),,Melilla");
