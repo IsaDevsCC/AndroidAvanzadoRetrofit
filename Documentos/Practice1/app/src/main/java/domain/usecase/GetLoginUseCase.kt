@@ -9,7 +9,6 @@ class GetLoginUseCase(
     private val loginRepository : LoginRepository
 ) {
 
-
     fun checkLogin(user : LoginModel, context : Context)  {
         loginRepository.getLogin(user, context)
     }
