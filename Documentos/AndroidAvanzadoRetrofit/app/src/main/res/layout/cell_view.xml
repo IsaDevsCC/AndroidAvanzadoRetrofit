@@ -30,6 +30,7 @@
                 android:text="name"
                 android:textSize="24sp"
                 android:textColor="#E91E63"
+                android:layout_marginLeft="20dp"
                 />
         </LinearLayout>
 

@@ -5,17 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.androidavanzadoretrofit.R
-import com.example.androidavanzadoretrofit.databinding.CellViewBinding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.example.androidavanzadoretrofit.databinding.FragmentListBinding
 import domain.model.HeroeModel
-import domain.model.entity
 
 
 class ListFragment : Fragment() {
 
-    private  lateinit var binding : FragmentListBinding
+    private lateinit var binding: FragmentListBinding
 
+    private val viewModel: ListViewModel by viewModel()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,14 +26,17 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        startFragment()
+        setViewModel()
     }
 
-    private fun startFragment() = binding.rvContainer.let {
-        val list = List(25) {
-            entity()
-       }
-
-        it.adapter = ListAdapter(list)
+    private fun setViewModel() {
+        viewModel.data.observe(viewLifecycleOwner) {
+            startFragment(it)
+        }
+        viewModel.loadHeroes()
     }
+    private fun startFragment(data: List<HeroeModel>) = binding.rvContainer.let {
+        it.adapter = ListAdapter(data)
+    }
+
 }
